@@ -9,4 +9,9 @@ public class MyMathTest {
     public void testAddPositive() {
         assertEquals(5, MyMath.myAdd(3, 2));
     }
+
+    @Test
+    public void testAddNegative() {
+        assertEquals(-6, MyMath.myAdd(-3, -2));
+    }
 }
