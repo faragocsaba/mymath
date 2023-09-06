@@ -6,6 +6,6 @@ public class MyMath {
 	}
 
 	public static int mySubtract(int a, int b) {
-	    return a-b;
+	    return a - b;
 	}
 }
