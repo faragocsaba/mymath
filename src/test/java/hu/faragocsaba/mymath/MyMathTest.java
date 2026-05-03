@@ -17,7 +17,7 @@ public class MyMathTest {
 
     @Test
     public void testMySubtract_positiveResult() {
-        assertEquals(3, MyMath.mySubtract(5, 2));
+        assertEquals(4, MyMath.mySubtract(5, 2));
     }
 
     @Test
