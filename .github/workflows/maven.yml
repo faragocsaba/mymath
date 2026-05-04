@@ -24,4 +24,4 @@ jobs:
     - name: Build with Maven
       # A "-DskipTests=false" biztosítja a tesztek futását, 
       # a többi sallangot pedig elhagyjuk.
-      run: mvn -B clean package999
+      run: mvn -B clean package
