@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MyMathTest {
     @Test
     public void testMyAdd_positiveResult() {
-        assertEquals(4, MyMath.myAdd(3, 2));
+        assertEquals(5, MyMath.myAdd(3, 2));
     }
 
     @Test
