@@ -1,0 +1,28 @@
+name: Java CI/CD pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Lépés: A forráskód letöltése a futtató környezetbe
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. Lépés: A Java környezet beállítása (pl. Java 17 vagy 21 igény szerint)
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    # 3. Lépés: A Maven build és a JUnit tesztek futtatása
+    - name: Build with Maven (Compile and Test)
+      run: mvn -B clean verify
